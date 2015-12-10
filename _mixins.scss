@@ -1,0 +1,33 @@
+@mixin min-siblings($children: null) {
+	@if ($children) {
+
+		&:nth-last-child(n+#{$children}),
+		&:nth-last-child(n+#{$children}) ~ * {
+			@content;
+		}
+	}
+}
+
+@mixin max-siblings($children: null) {
+	@if ($children) {
+		
+
+		&:nth-last-child(-n+#{$children}):first-child,
+		&:nth-last-child(-n+#{$children}):first-child ~ * {
+			@content;
+		}
+
+	}
+}
+
+@function first($list) {
+  @return nth($list, 1);
+}
+
+@function last($list) {
+  @return nth($list, length($list));
+}
+
+@function to-list($args...) {
+  @return append((), $args);
+}

@@ -1,0 +1,7 @@
+@import 'mixins';
+
+ul li {
+	@include min-siblings(5) {
+		color: green;
+	}
+}

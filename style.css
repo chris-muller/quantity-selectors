@@ -1,0 +1,3 @@
+ul li:nth-last-child(n+5), ul li:nth-last-child(n+5) ~ * {
+  color: green;
+}

@@ -1,0 +1,11 @@
+{
+  "name": "NewProject",
+  "version": "0.1.0",
+  "description": "An empty project.",
+  "author": "Christopher Muller",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-ruby-sass": "^2.0.3"
+  }
+}
